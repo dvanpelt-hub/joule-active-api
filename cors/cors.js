@@ -2,7 +2,7 @@ const cors = require("cors");
 
 const CLIENT_ORIGIN = {
   origin: [
-    "https://localhost:3000/",
+    "http://localhost:3000/",
     "http://localhost:3000/api/v1/",
     "http://localhost:3050/api/v1/",
     "http://localhost:3050/",
