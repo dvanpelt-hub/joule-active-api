@@ -3,7 +3,7 @@ const express = require("express");
 const mailingListRouter = require("./routes/mailing-list-router");
 const app = express();
 const cors = require("cors");
-const { CLIENT_ORIGIN } = require("../cors/cors");
+const { CLIENT_ORIGIN } = require("../cors/cors.js");
 const helmet = require("helmet");
 
 app.use(cors(CLIENT_ORIGIN));
