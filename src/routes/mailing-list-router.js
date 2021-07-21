@@ -36,9 +36,8 @@ mailingListRouter
       email
     )
       .then((user) => {
-        res
-          .status(201)
-          .location(path.posix.join(req.originalUrl, `/${user.user_id}`));
+        res.status(201);
+        // .location(path.posix.join(req.originalUrl, `/${user.user_id}`));
         res.json(sanitizeEntry(user));
       })
       .catch(next);
