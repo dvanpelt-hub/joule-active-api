@@ -1,11 +1,11 @@
 require("dotenv").config();
 const express = require("express");
 const mailingListRouter = require("./routes/mailing-list-router");
-const app = express();
-const corsMiddleware = require("./cors/cors");
+const cors = require("cors");
 const helmet = require("helmet");
+const app = express();
 
-app.use(corsMiddleware);
+app.use(cors());
 app.use(express.json());
 app.use(helmet());
 
